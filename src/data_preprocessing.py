@@ -1,8 +1,7 @@
 import pandas as pd
 
 def clean_data(df):
-    """create conflict"""
-    """Remove rows with missing customer IDs and fill NaNs."""
+    """change 1"""
     df = df.dropna(subset=['customer_id'])
     df = df.fillna(0)
     return df
